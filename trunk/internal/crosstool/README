@@ -1,0 +1,138 @@
+
+This cross-tool-chain contains building utilities for multiple languages.
+
+Note:
+  Currently, those "interpretive languages" are not included. E.g.:
+  - PHP
+  - JavaScript (Minifier)
+  - CSS (Minifier)
+  Instead, they're included as third_party packages.
+
+This tool-chain includes:
+
+- cc (C++ Programming Language)
+  This package provides the support for C++ Programming Language, and includes
+  base utilities for native runnables as well.
+
+  - crosstool-NG (Cross-Platform Building Toolchain Builder)
+    crosstool-NG aims at building toolchains. Toolchains are an essential
+    component in a software development project.
+    http://ymorin.is-a-geek.org/projects/crosstool
+
+  - BinUtils (GNU Binutils)
+    The GNU Binutils are a collection of binary tools.
+    http://www.gnu.org/software/binutils/
+
+  - GCC (GNU Compiler Collection)
+    The GNU Compiler Collection includes front ends for C, C++, Objective-C,
+    Fortran, Java, and Ada, as well as libraries for these languages.
+    http://gcc.gnu.org/
+
+  - GMP (GNU MP Bignum Library)
+    GMP is a free library for arbitrary precision arithmetic, operating on
+    signed integers, rational numbers, and floating point numbers.
+    http://gmplib.org/
+
+  - MPFR (Multiple-Precision Binary Floating-Point Library)
+    The MPFR library is a C library for multiple-precision floating-point
+    computations with correct rounding.
+    http://www.mpfr.org/
+
+  - GLIBC (GNU C Library)
+    Any Unix-like operating system needs a C library: the library which defines
+    the "system calls" and other basic facilities.
+    http://www.gnu.org/software/libc/
+
+  - Linux Kernel Header (compatiable with >2.6.16)
+    The Linux Kernel Archives, which contains header files.
+    http://www.kernel.org/
+
+  - GDB (GNU Debugger)
+    GDB, the GNU Project debugger, allows you to see what is going on "inside"
+    another program while it executes -- or what another program was doing at
+    the moment it crashed.
+    http://www.gnu.org/software/gdb/
+
+  - Dmalloc (Debug Malloc Library)
+    The debug memory allocation or dmalloc library has been designed as a drop
+    in replacement for the system's malloc, realloc, calloc, free and other
+    memory management routines while providing powerful debugging facilities
+    configurable at runtime.
+    http://dmalloc.com/
+
+  - D.U.M.A (Detect Unintended Memory Access)
+    DUMA is an open-source library (under GNU General Public License) to detect
+    buffer overruns and under-runs in C and C++ programs.
+    http://duma.sourceforge.net/
+
+  - NCURSES (GNU New Curses)
+    The Ncurses (new curses) library is a free software emulation of curses in
+    System V Release 4.0, and more.
+    http://www.gnu.org/software/ncurses/
+
+  - LTRACE
+    ltrace intercepts and records dynamic library calls which are called by an
+    executed process and the signals received by that process. It can also
+    intercept and print the system calls executed by the program.
+    http://ltrace.org/
+    http://packages.debian.org/{stable,testing,unstable}/utils/ltrace
+
+  - STRACE
+    strace is a system call tracer, i.e. a debugging tool which prints out a
+    trace of all the system calls made by a another process/program.
+    http://sourceforge.net/projects/strace/
+
+  - sstrip.c
+    sstrip is a small utility that removes the contents at the end of an ELF
+    file that are not part of the program's memory image.
+    Hacked by Manuel Novoa III to handle targets of different endianness and/or
+    elf class, making it more useful in a cross-devel environment.
+    Original: http://www.muppetlabs.com/~breadbox/software/elfkickers.html
+    Modified (x): http://upx.sourceforge.net/
+
+  - LIBELF
+    ELF object file access library, which lets you read, modify or create ELF
+    files in an architecture-independent way.
+    http://www.mr511.de/software/
+
+  - ECJ (Eclipse Compiler for Java)
+    http://www.eclipse.org/jdt/core/index.php
+
+- java (Java Programming Language)
+  This package provides the basic support for Java Programming Language,
+  includes JVM and other run-time libraries.
+
+  - OpenJDK
+    The open-source implementation of the Java Platform, Standard Edition.
+    Java Platform, Standard Edition (Java SE) lets you develop and deploy Java
+    applications on desktops and servers, as well as today's demanding Embedded
+    and Real-Time environments.
+    http://openjdk.java.net/
+
+- python (Python Programming Language and its run-times)
+  This package provides the basic support for Python Programming Language, as
+  well as the run-time libraries.
+
+  - Stackless Python
+    Stackless Python is an enhanced version of the Python programming language.
+    It allows programmers to reap the benefits of thread-based programming
+    without the performance and complexity problems associated with
+    conventional threads.
+    http://www.stackless.com/
+
+- actionscript (ActionScript run-times described in Flex SDK)
+  This package provides the compiling tool for Flex/ActionScript.
+
+  - Flex SDK
+    Flex is a highly productive, open source framework for building and
+    maintaining expressive web applications that deploy consistently on all
+    major browsers, desktops and operating systems.
+    http://opensource.adobe.com/wiki/display/flexsdk
+
+- protocolbuffer (Protocol Buffer and its libraries)
+  This package provides the compiling tool for Google Protocol Buffer.
+
+  - protoc
+  This package includes Google Protocol Buffer tools to compile the .proto file
+  into .cc, .java, or .py files.
+  http://code.google.com/p/protobuf/

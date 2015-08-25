@@ -1,0 +1,29 @@
+#version 1
+
+- cc (C++ Programming Language)
+  - crosstool-NG 1.5.2
+  - BinUtils 2.20
+  - GCC 4.4.2
+  - GMP 4.3.1
+  - MPFR 2.4.2
+  - GLIBC 2.11
+  - Linux Kernel Header 2.6.32.2
+  - GDB 7.0.1
+  - Dmalloc 5.5.2
+  - D.U.M.A 2.5.15
+  - NCURSES 5.7
+  - LTRACE 0.5.3
+  - STRACE 4.5.19
+  - LIBELF 0.8.13
+  - ECJ 3.5.1
+  - sstrip.c
+
+- java (Java Programming Language)
+  - OpenJDK 6-b17
+
+- python (Python Programming Language)
+  - Stackless Python 2.6.4
+
+- actionscript (ActionScript run-times described in Flex SDK)
+  - Flex SDK 3.5
+
